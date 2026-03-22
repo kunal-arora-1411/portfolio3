@@ -120,8 +120,6 @@ export const config = {
         email: "kunalar2003@gmail.com",
         github: "https://github.com/kunal-arora-1411",
         linkedin: "https://www.linkedin.com/in/kunal-arora-597a4827b/",
-        twitter: "",
-        facebook: "",
         instagram: "https://www.instagram.com/kunal_arora_1411?igsh=NXNqbGprMzY1b2tu"
     },
     skills: {
