@@ -1,0 +1,187 @@
+/* ========================================
+   SCROLLYTELLING LANDING
+   ======================================== */
+
+:root {
+  --font-heading-display: "Geist", sans-serif;
+}
+
+.landing-section {
+  position: relative;
+  height: 1000vh;
+}
+
+/* ---- Hero Panel ---- */
+.scroll-panel {
+  position: fixed;
+  top: -36px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 72px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.panel-inner {
+  max-height: 88vh;
+}
+
+.panel-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-greeting {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: var(--accentColor);
+  margin-bottom: 10px;
+}
+
+.hero-name {
+  font-family: var(--font-heading-display);
+  font-weight: 700;
+  font-size: clamp(4rem, 14vw, 10rem);
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.hero-line {
+  width: 100px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 1.5rem 0;
+}
+
+.hero-role {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Overlay sections inside scrollytelling ---- */
+.scroll-panel-about,
+.scroll-panel-what {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.scroll-panel-what .whatIDO {
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  width: var(--cWidth);
+  max-width: 1920px;
+}
+
+/* ---- Gradient Blobs ---- */
+.landing-circle1 {
+  top: 0%;
+  left: 0%;
+  z-index: 15;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background-color: #fb8dff;
+  box-shadow: inset -50px 40px 50px rgba(84, 0, 255, 0.6);
+  filter: blur(60px);
+  border-radius: 50%;
+  animation: loadingCircle 5s linear infinite;
+}
+
+.landing-circle2 {
+  top: 50%;
+  right: 0%;
+  transform: translate(calc(100% - 2px), -50%);
+  z-index: 9;
+  position: fixed;
+  display: none;
+  width: 300px;
+  height: 300px;
+  background-color: #fb8dff;
+  box-shadow: inset -50px 40px 50px rgba(84, 0, 255, 0.6);
+  filter: blur(50px);
+  border-radius: 50%;
+  animation: loadingCircle2 5s linear infinite;
+}
+
+@keyframes loadingCircle {
+  0% {
+    transform: translate(-95%, -75%) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate(-95%, -75%) rotateZ(360deg);
+  }
+}
+
+@keyframes loadingCircle2 {
+  100% {
+    transform: translate(calc(100% - 2px), -50%) rotate(360deg);
+  }
+}
+
+.nav-fade {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  background-image: linear-gradient(0deg, transparent, var(--backgroundColor) 70%);
+  pointer-events: none;
+  z-index: 12;
+  opacity: 0;
+  left: 0;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media screen and (min-width: 500px) {
+  .landing-circle2 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-section {
+    height: 600vh;
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 12vw, 5rem);
+    letter-spacing: -2px;
+  }
+
+  .hero-role {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    letter-spacing: 4px;
+  }
+
+  .hero-line {
+    width: 60px;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-section {
+    height: 500vh;
+  }
+
+  .hero-greeting {
+    font-size: 0.9rem;
+  }
+}
