@@ -81,6 +81,24 @@ export const config = {
         },
         {
             id: 2,
+            title: "VoxStore",
+            category: "AI / Full Stack",
+            technologies: "React, Node.js, Express, MongoDB, OpenAI API, Vercel API, Tailwind CSS, Vite",
+            image: "",
+            link: "https://github.com/kunal-arora-1411/Voxstore",
+            description: "AI-powered website builder for small businesses — describe your shop and VoxStore generates a fully responsive, production-ready website in under 60 seconds using OpenAI. Automatically deploys to Vercel and returns a live hosted link with zero coding required. Includes a dashboard with visitor analytics and revenue estimates."
+        },
+        {
+            id: 3,
+            title: "HostelOS",
+            category: "Full Stack / Mobile",
+            technologies: "NestJS, Expo React Native, Next.js, PostgreSQL, Prisma, Redis, Turborepo, JWT, Razorpay, Firebase FCM, Twilio",
+            image: "",
+            link: "https://github.com/kunal-arora-1411",
+            description: "End-to-end hostel management platform with a React Native mobile app (Android/iOS) and a super admin web dashboard. Supports multi-branch operations with role-based access for super admins, wardens, support staff, and tenants. Features room & bed allocation, tenant onboarding, complaint ticketing, payment processing via Razorpay, and multi-channel notifications via email, SMS, and Firebase push."
+        },
+        {
+            id: 4,
             title: "SEO/GEO Overlay",
             category: "AI / Browser Extension",
             technologies: "JavaScript, Browser APIs, AI Analysis, DOM Manipulation, Real-time Rendering",
@@ -89,7 +107,7 @@ export const config = {
             description: "A breakthrough tool that goes beyond traditional dashboards. While every brand from SEMrush to Profounders is stuck showing suggestions in a separate panel, this overlay renders optimization suggestions directly on the live website — showing exactly where to change and what to change, right on the page itself."
         },
         {
-            id: 3,
+            id: 5,
             title: "RecruitDesk",
             category: "AI / LLM",
             technologies: "Python, LangChain, FastAPI, LLMs, JSON Schema, React",
@@ -98,7 +116,7 @@ export const config = {
             description: "An LLM-based interactive interview system with automated pipelines for resume/JD parsing, rubric generation, and competency-based question generation. Features strict JSON-based grading with structured evaluation storage and a modular architecture enabling scalable AI-driven evaluation workflows."
         },
         {
-            id: 4,
+            id: 6,
             title: "CertifyHub",
             category: "Full Stack / Blockchain",
             technologies: "Next.js, Node.js, Polygon, Canvas API, Webhooks, Smart Contracts",
@@ -107,7 +125,7 @@ export const config = {
             description: "A full-stack certificate publishing platform enabling issuance of tamper-proof, verifiable digital credentials. Features a dynamic canvas-based certificate editor, webhook-driven LMS integrations, and blockchain verification using Polygon network with cryptographic hashes stored on-chain."
         },
         {
-            id: 5,
+            id: 7,
             title: "DINOv3 Brain Tumor Analysis",
             category: "AI / Research (IEEE)",
             technologies: "PyTorch, Vision Transformers, LoRA, DINOv3, Medical Imaging",
